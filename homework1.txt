@@ -1,0 +1,12 @@
+Homework 1 - Data 515
+Will Bishop
+
+a. (2 points) What column or columns in #1 are a minimal key? (By minimal is meant that no column can be removed and the result will still be a key.)
+
+I would have expected video_id to be a minimal key; however, the procedure from part b shows 35950 rows but only 30697 unique values of video_id, so apparently it is not a key. Furthermore, there are 30724 unique combinations of {video_id, category_id} and 35920 unique combinations of {video_id, language}, so to get 35950 unique values, you actually need all three columns.
+
+b. (2 points) What test can you perform to see if columns in #2 are a key? Are a minimal key?
+
+If the key candidate is only one column, use SELECT COUNT(DISTINCT [key candidate]) to find the number of unique values of the key candidate. Use SELECT COUNT(*) to find the total number of rows in the table. If the two are equal, the candidate is a minimal key.
+
+If the key candidate is multiple columns, use SELECT COUNT(*) FROM (SELECT DISTINCT...) to find the number of unique values, then compare to the total number of rows as before. If the candidate is a key, test subsets of it in the same manner to find the minimal key.
