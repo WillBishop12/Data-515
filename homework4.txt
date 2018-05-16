@@ -1,0 +1,54 @@
+$ pylint homework3.py
+************* Module homework3
+C:  4, 0: Line too long (198/100) (line-too-long)
+W:  9, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 10, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 11, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 13, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 15, 0: Final newline missing (missing-final-newline)
+C: 15, 0: Line too long (364/100) (line-too-long)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  1, 0: Missing module docstring (missing-docstring)
+E:  5, 0: Unable to import 'pathlib' (import-error)
+W:  9, 1: Redefining built-in 'file' (redefined-builtin)
+C:  7, 0: Argument name "fp" doesn't conform to snake_case naming style (invalid-name)
+C:  7, 0: Missing function docstring (missing-docstring)
+C:  5, 0: standard import "from pathlib import Path" should be placed before "import pandas as pd"                                                                                               (wrong-import-order)
+
+-------------------------------------
+Your code has been rated at -10.00/10
+
+No config file found, using default configuration
+
+$ pylint test_homework3.py
+************* Module test_homework3
+W:  7, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  8, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  9, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 12, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 13, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 14, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 16, 0: Trailing whitespace (trailing-whitespace)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 20, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 23, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 24, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 30, 0: Final newline missing (missing-final-newline)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  4, 0: Missing class docstring (missing-docstring)
+C:  7, 1: Missing method docstring (missing-docstring)
+C: 12, 1: Missing method docstring (missing-docstring)
+C: 13, 2: Variable name "df" doesn't conform to snake_case naming style (invalid-name)
+C: 18, 1: Missing method docstring (missing-docstring)
+C: 19, 2: Variable name "df" doesn't conform to snake_case naming style (invalid-name)
+C: 23, 1: Missing method docstring (missing-docstring)
+C: 24, 2: Variable name "df" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------
+Your code has been rated at -3.89/10
+
+No config file found, using default configuration
